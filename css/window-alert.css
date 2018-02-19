@@ -1,0 +1,89 @@
+.window--alert {
+  padding-top: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 100px;
+  display: block;
+  background-color: #fffffffa;
+  width: 10%;
+  position: absolute;
+  z-index: 1;
+  top: 15%;
+  left: 40%;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+.grid-container--buttons {
+  display: inline-grid;
+  grid-template-columns: 100px 100px;
+  grid-column-gap: 50px;
+  position: relative;
+  top: 60px;
+  right: 40px; }
+
+.submitMeal .inputMeal {
+  position: absolute; }
+
+.button {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-style: solid;
+  border-color: #ae8810; }
+  .button--ok {
+    background-color: #f7d24d; }
+  .button--cancel {
+    background-color: #f7d24d; }
+
+.none {
+  display: none; }
+
+@keyframes scale {
+  0% {
+    transform: scale(0); }
+  90% {
+    transform: scale(1.1); }
+  100% {
+    transform: scale(1); } }
+.button:hover {
+  cursor: pointer; }
+
+.conditionalOpen {
+  animation: conditionalOpen .40s normal forwards ease-in-out;
+  transform-origin: 50% 50%; }
+
+.conditionalClose {
+  animation: conditionalClose .40s normal forwards ease-in-out;
+  transform-origin: 50% 50%; }
+
+@-webkit-keyframes conditionalOpen {
+  from {
+    transform: scale(0); }
+  to {
+    transform: scale(1); } }
+@-moz-keyframes conditionalOpen {
+  from {
+    transform: scale(0); }
+  to {
+    transform: scale(1); } }
+@keyframes conditionalOpen {
+  from {
+    transform: scale(0); }
+  to {
+    transform: scale(1); } }
+@-webkit-keyframes conditionalClose {
+  from {
+    transform: scale(1); }
+  to {
+    transform: scale(0); } }
+@-moz-keyframes conditionalClose {
+  from {
+    transform: scale(1); }
+  to {
+    transform: scale(0); } }
+@keyframes conditionalClose {
+  from {
+    transform: scale(1); }
+  to {
+    transform: scale(0); } }
+
+/*# sourceMappingURL=window-alert.css.map */
