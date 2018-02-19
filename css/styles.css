@@ -1,0 +1,140 @@
+/*
+$font-stack: Helvetica, sans-serif;
+$primary-color: #fff
+
+body {
+	font: $font-stack;
+	color: $primary-color;
+}
+*/
+
+.main--container {
+  width: 100%;
+  font-family: Helvetica, sans-serif;
+  overflow: hidden;
+  background-image: url(../images/cartoonbgtest.jpg);
+  -webkit-animation: animatedBackground 30s linear infinite;
+}
+
+@-webkit-keyframes animatedBackground 
+{
+  from { background-position: 0 100%; }
+  to { background-position: 100% 100%; }
+}
+
+
+/* CSS Grid */
+.item1 {
+  grid-area: logo;
+  padding-top: 3%;
+}
+
+.item2 {
+  grid-area: search;
+}
+
+.item3 {
+  grid-area: predator;
+}
+
+.item4 {
+  grid-area: human;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas: 'logo logo' 'search search' 'predator human';
+  grid-gap: 20px;
+  
+}
+
+.grid-container > div {
+  text-align: center;
+  font-size: 30px;
+}
+
+/* Logo and text frontpage */
+#fronttext {
+  font-family: 'Freckle Face', cursive, sans-serif;
+  font-size: 1.3em;
+}
+
+
+/* Images on index.html */
+.t-rex {
+  padding-top: 10%;
+  width: 35%;
+  position: relative;
+  -webkit-animation-name: examplerex;
+  -webkit-animation-duration: 5s;
+  animation-direction: reverse;
+  animation-iteration-count: infinite
+}
+
+@-webkit-keyframes examplerex {
+  0%   {background; left:0px; top:0px;}
+  25%  {background; left:100px; top:0px;}
+  50%  {background; left:100px; top:0px;}
+  75%  {background; left:0px; top:0px;}
+  100% {background; left:0px; top:0px;}
+}
+
+.human {
+  padding-top: 33%;
+  width: 22%;
+  position: relative;
+  -webkit-animation-name: examplehuman;
+  -webkit-animation-duration: 4s;
+  animation-iteration-count: infinite
+}
+
+@-webkit-keyframes examplehuman {
+  0%   {background; left:0px; top:0px;}
+  25%  {background; left:100px; top:0px;}
+  50%  {background; left:100px; top:0px;}
+  75%  {background; left:0px; top:0px;}
+  100% {background; left:0px; top:0px;}
+}
+
+/* Animations on index.html */
+.zoomIn {
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+}
+
+.tada {
+  animation-delay: 1.3s;
+  animation-duration: 1.2s;
+}
+
+.shake {
+  animation-delay: 1.9s;
+}
+
+.inputMeal {
+  width: 300px;
+  height: 22px;
+}
+
+.inputMeal:focus {
+  outline: none;
+}
+
+.submitMeal {
+  width: 60px;
+  height: 30px;
+  color: white;
+  background: #ADD100;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #7B920A, #ADD100);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #7B920A, #ADD100); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-width: 4px;
+  border-color: #f6d24d;
+}
+
+/* Header logo */
+#logoheader {
+  width: 50%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
