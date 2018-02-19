@@ -38,7 +38,7 @@
 					<option class="inputPredator" name="bull" value="Bull" data-list="bull"><span>Bull</span></option>
 					<option class="inputPredator" name="tyrannotitan" value="Tyrannotitan" data-list="tyrannotitan"><span>Tyrannotitan</span></option>
 					<option class="inputPredator" name="bieber" value="Justin_Bieber" data-list="justin_bieber"><span>Justin Bieber</span></option>
-					<option class="inputPredator" value="tiger" data-list="Tiger"><span>Tiger</span></option>
+					<option class="inputPredator" value="Tiger" data-list="Tiger"><span>Tiger</span></option>
 				</select>
 
 
